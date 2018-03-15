@@ -1,15 +1,13 @@
-import React from 'react';
-import Header from './Header';
-import Section from './Section';
+import React from 'react'
 
-const img ='../../public/foto.jpg';
-const hobbies =['hobbie 1','hobbie 2' ,'hobbie 3'];
-const text = 'cualquier texto';
+import Header from './Header'
+// Ahora estará enlazado al HOC
+import Hobbies from '../containers/Hobbies-container'
 
-const App = () => (
+const App = () => ( 
   <div>
     <Header/>
-    <Section img={img} hobbies={hobbies} text={text}/>
+    <Hobbies/>
   </div>
 )
 
